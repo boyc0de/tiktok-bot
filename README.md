@@ -1,31 +1,36 @@
 # TikTok Bot
 
-Prosty bot w Pythonie, który pobiera filmy z TikToka **bez znaku wodnego** (przez [yt-dlp](https://github.com/yt-dlp/yt-dlp)) i zapisuje je w folderze `Pobrane/TikTok` (`~/Downloads/TikTok`).
+**English** | [Polski](README.pl.md)
 
-## Instalacja
+A simple Python bot that downloads TikTok videos **without the watermark** (using [yt-dlp](https://github.com/yt-dlp/yt-dlp)) and saves them to `~/Downloads/TikTok`.
+
+## Installation
 
 ```bash
+git clone https://github.com/boyc0de/tiktok-bot.git
+cd tiktok-bot
 pip install -r requirements.txt
 ```
-(na macOS/Linuksie: `pip3`)
+(on macOS/Linux use `pip3` and `python3`)
 
-## Użycie
+## Usage
 
-| Co | Komenda |
+| What | Command |
 |---|---|
-| Jeden lub kilka filmów | `python tiktok_bot.py <link> [<link> ...]` |
-| Cały profil | `python tiktok_bot.py https://www.tiktok.com/@nazwa` |
-| Linki z pliku `links.txt` | `python tiktok_bot.py` |
-| Pobieraj skopiowane linki (schowek) | `python tiktok_bot.py --watch` |
-| Gdy TikTok blokuje | dodaj `--cookies chrome` (lub `firefox`, `edge`, `brave`) |
+| One or more videos | `python tiktok_bot.py <link> [<link> ...]` |
+| Whole profile | `python tiktok_bot.py https://www.tiktok.com/@username` |
+| Links from `links.txt` | `python tiktok_bot.py` |
+| Download copied links (clipboard) | `python tiktok_bot.py --watch` |
+| When TikTok blocks requests | add `--cookies chrome` (or `firefox`, `edge`, `brave`) |
+| Message language | `--lang en` or `--lang pl` (default: system language) |
 
-Już pobrane filmy są pomijane (`archive.txt`).
+Already downloaded videos are skipped (`archive.txt`).
 
-## Rozwiązywanie problemów
+## Troubleshooting
 
-- **„Unexpected response from webpage request”** – zaktualizuj: `pip install -U --pre "yt-dlp[default,curl-cffi]"` i uruchom z `--cookies chrome` (najpierw otwórz tiktok.com w tej przeglądarce).
-- **Brak dźwięku** – zainstaluj ffmpeg (`brew install ffmpeg` / `winget install ffmpeg`).
+- **"Unexpected response from webpage request"** – update: `pip install -U --pre "yt-dlp[default,curl-cffi]"` and run with `--cookies chrome` (open tiktok.com in that browser first).
+- **No sound** – install ffmpeg (`brew install ffmpeg` / `winget install ffmpeg`).
 
-## Uwaga
+## Note
 
-Prawa do filmów należą do ich autorów. Pobieraj na własny użytek i nie publikuj ponownie cudzych treści bez zgody.
+Videos belong to their creators. Download for personal use only and don't re-upload other people's content without permission.
