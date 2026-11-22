@@ -13,7 +13,14 @@ pip install -r requirements.txt
 ```
 (na macOS/Linuksie: `pip3` i `python3`)
 
-## Użycie
+## Okienko (GUI)
+
+```bash
+python tiktok_gui.py
+```
+Wklej linki (filmy lub profile), opcjonalnie wybierz przeglądarkę w polu **Ciasteczka z przeglądarki** i kliknij **Pobierz**. Przycisk **EN/PL** zmienia język.
+
+## Wiersz poleceń
 
 | Co | Komenda |
 |---|---|

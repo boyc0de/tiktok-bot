@@ -13,7 +13,14 @@ pip install -r requirements.txt
 ```
 (on macOS/Linux use `pip3` and `python3`)
 
-## Usage
+## GUI (window)
+
+```bash
+python tiktok_gui.py
+```
+Paste links (videos or profiles), optionally pick your browser under **Browser cookies**, and click **Download**. The **PL/EN** button switches the language.
+
+## Command line
 
 | What | Command |
 |---|---|
